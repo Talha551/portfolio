@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Talha Ausaf | Full Stack Developer & ISP Integration Specialist</title>
+    <meta name="description"
+        content="Portfolio of Muhammad Talha Ausaf - Full Stack Web Developer and ISP/Telecom Integration Specialist based in Islamabad, Pakistan. Specializing in Laravel, PHP, React, FreeRADIUS, and MikroTik RouterOS API.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <!-- Background Glow Elements for visual depth -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="grid-overlay"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-text-gradient">Talha</span><span class="logo-dot">.</span>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="nav-desktop">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#expertise" class="nav-link">Expertise</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link nav-btn-contact">Contact Me</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- Mobile Nav Toggle -->
+                <button class="mobile-nav-toggle" aria-label="Toggle Navigation" id="mobile-toggle-btn">
+                    <i data-lucide="menu" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Overlay & Menu -->
+    <div class="mobile-drawer" id="mobile-drawer">
+        <div class="drawer-header">
+            <span class="logo-text-gradient">Talha.</span>
+            <button class="drawer-close" id="drawer-close-btn">
+                <i data-lucide="x"></i>
+            </button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#expertise" class="drawer-link">Expertise</a>
+            <a href="#experience" class="drawer-link">Experience</a>
+            <a href="#projects" class="drawer-link">Projects</a>
+            <a href="#skills" class="drawer-link">Skills</a>
+            <a href="#education" class="drawer-link">Education &amp; Certs</a>
+            <a href="#contact" class="drawer-link drawer-btn-contact">Contact Me</a>
+        </nav>
+    </div>
+
+    <main class="main-content">
+        <!-- Hero / About Section -->
+        <section id="about" class="hero-section">
+            <div class="hero-content">
+                <div class="status-badge-container scroll-reveal">
+                    <span class="status-badge">
+                        <span class="status-dot"></span>
+                        Available for Full-time Roles &amp; Contracts
+                    </span>
+                </div>
+                <h1 class="hero-title scroll-reveal">
+                    Muhammad Talha <span class="text-gradient">Ausaf</span>
+                </h1>
+                <h2 class="hero-subtitle scroll-reveal">
+                    Full Stack Web Developer
+                </h2>
+                <p class="hero-description scroll-reveal">
+                    Full Stack Web Developer with 3+ years of experience, specializing in ISP backend architectures,
+                    telecom billing systems, and enterprise web application development. Hands-on expertise in
+                    <strong>RADIUS/AAA</strong> systems, <strong>MikroTik RouterOS API</strong>, and robust billing
+                    portals, coupled with core proficiency in <strong>Laravel, PHP, React.js, Node.js</strong>, and SQA
+                    practices.
+                </p>
+
+                <!-- CTA Actions -->
+                <div class="hero-actions scroll-reveal">
+                    <a href="#contact" class="btn btn-primary">
+                        Get In Touch
+                        <i data-lucide="arrow-right" class="btn-icon"></i>
+                    </a>
+                    <a href="./Muhammad_Talha_Ausaf_Resume.pdf" class="btn btn-secondary" download>
+                        Download Resume
+                        <i data-lucide="download" class="btn-icon"></i>
+                    </a>
+                </div>
+
+                <!-- Quick Stats / Social Connect -->
+                <div class="hero-footer scroll-reveal">
+                    <div class="social-links">
+                        <a href="https://github.com/Talha551" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/talha-ausaf" target="_blank" rel="noopener noreferrer"
+                            class="social-icon-btn" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="mailto:talhaausaf000@gmail.com" class="social-icon-btn" aria-label="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                        <span class="social-divider"></span>
+                        <a href="tel:+923359721672" class="social-contact-text">
+                            <i data-lucide="phone" class="inline-icon"></i> +92 335 9721672
+                        </a>
+                        <span class="social-divider"></span>
+                        <span class="social-contact-text">
+                            <i data-lucide="map-pin" class="inline-icon"></i> Islamabad, Pakistan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domain Expertise Section -->
+        <section id="expertise" class="expertise-section section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-tagline">Core Capabilities</span>
+                <h2 class="section-title">Areas of Expertise</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="expertise-grid">
+                <!-- Card 1 -->
+                <div class="expertise-card scroll-reveal">
+                    <div class="card-icon-container">
+                        <i data-lucide="server" class="card-icon"></i>
+                    </div>
+                    <h3 class="card-title">ISP &amp; Telecom Systems</h3>
+                    <p class="card-text">
+                        End-to-end integration of FreeRADIUS/AAA servers, MikroTik RouterOS APIs, and BNG Portals.
+                        Expert in configuring PPPoE/DHCP provisioning, Vendor-Specific Attributes (VSAs), NAS
+                        configurations, and subscriber lifecycle management.
+                    </p>
+                    <ul class="card-list">
+                        <li>RADIUS Authentication &amp; Accounting</li>
+                        <li>MikroTik OS API &amp; Provisioning</li>
+                        <li>Centralized User Profile Sync (HLR/HSS)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="expertise-card scroll-reveal">
+                    <div class="card-icon-container">
+                        <i data-lucide="code-2" class="card-icon"></i>
+                    </div>
+                    <h3 class="card-title">Full Stack Web Dev</h3>
+                    <p class="card-text">
+                        Designing secure, scalable web platforms with granular Role-Based Access Control (RBAC).
+                        Proficient in Laravel, PHP MVC, React.js, Node.js, and custom REST API development, optimizing
+                        query performance.
+                    </p>
+                    <ul class="card-list">
+                        <li>Laravel, PHP &amp; MVC Frameworks</li>
+                        <li>RESTful API &amp; Middleware Dev</li>
+                        <li>MySQL Database Tuning &amp; MongoDB</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="expertise-card scroll-reveal">
+                    <div class="card-icon-container">
+                        <i data-lucide="shield-check" class="card-icon"></i>
+                    </div>
+                    <h3 class="card-title">QA &amp; Security Engineering</h3>
+                    <p class="card-text">
+                        Executing comprehensive manual and functional testing cycles. Experienced in building test
+                        plans, bug tracking, and enforcing OWASP web security practices (SQLi prevention, CSRF,
+                        parameterization).
+                    </p>
+                    <ul class="card-list">
+                        <li>Functional &amp; Regression Testing</li>
+                        <li>OWASP Security Standards</li>
+                        <li>Defect Lifecycle &amp; QA Reports</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Experience Section -->
+        <section id="experience" class="experience-section section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-tagline">My Career Path</span>
+                <h2 class="section-title">Employment History</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Experience Item 1 -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header-block">
+                        <span class="timeline-date">Jul 2025 – Present</span>
+                        <h3 class="timeline-role">Web Developer</h3>
+                        <h4 class="timeline-company">Pace Telecom &amp; Broadcasting (Pvt.) Ltd</h4>
+                        <span class="timeline-location"><i data-lucide="map-pin"></i> Islamabad</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-summary">Driving core network automation and full-stack system architecture:
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li><strong>Mobile Packet Core Integration:</strong> Connected 2G (GSM/GPRS) and 3G (UMTS)
+                                SGSN/GGSN sessions into centralized FreeRADIUS AAA systems for unified subscriber
+                                tracking.</li>
+                            <li><strong>HLR/HSS Synchronization:</strong> Built backend middleware to auto-synchronize
+                                user profiles and data quotas between billing portals and legacy network Home Location
+                                Registers.</li>
+                            <li><strong>BNG Management Portal:</strong> Deployed a complete Broadband Network Gateway
+                                manager utilizing PHP and MySQL, handling full subscriber activation, expiry, and RADIUS
+                                attribute tuning.</li>
+                            <li><strong>MikroTik RouterOS API:</strong> Integrated remote management capabilities for
+                                hotspot user provisioning, voucher generation, and session control directly from
+                                dashboards.</li>
+                            <li><strong>NOC Team Dashboards:</strong> Designed responsive, role-based real-time admin
+                                panels to manage subscriber sessions, check utilization metrics, and enforce OWASP
+                                security practices.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header-block">
+                        <span class="timeline-date">Dec 2024 – Jul 2025</span>
+                        <h3 class="timeline-role">SQA Engineer</h3>
+                        <h4 class="timeline-company">Creative Suite</h4>
+                        <span class="timeline-location"><i data-lucide="map-pin"></i> Islamabad</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-summary">Enforced software quality standards through meticulous testing
+                            procedures:</p>
+                        <ul class="timeline-bullets">
+                            <li>Executed manual and functional test cycles across diverse mobile devices and web
+                                browsers.</li>
+                            <li>Designed comprehensive test cases, regression test suits, and traceability matrices for
+                                production releases.</li>
+                            <li>Logged, prioritized, and tracked bugs end-to-end; collaborated with developers to
+                                conduct root-cause analyses.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header-block">
+                        <span class="timeline-date">Sept 2022 – Jul 2025</span>
+                        <h3 class="timeline-role">Web Developer</h3>
+                        <h4 class="timeline-company">Creative IT Park</h4>
+                        <span class="timeline-location"><i data-lucide="map-pin"></i> Islamabad</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-summary">Delivered responsive client projects, customized themes, and
+                            optimized performance:</p>
+                        <ul class="timeline-bullets">
+                            <li><strong>Custom WordPress &amp; WooCommerce Delivery:</strong> Designed, built, and
+                                launched responsive websites for international clients including <em>Thrive Consulting
+                                    Global</em>, <em>Little Pearls of Wisdom</em> (UK), <em>Coaching with Uzma</em>,
+                                <em>RM Security Solution</em>, and <em>Radspot</em>.</li>
+                            <li><strong>Theme &amp; Plugin Customization:</strong> Created child themes, customized
+                                plugins, and configured secure page styling, e-commerce integrations, and user
+                                appointment calendars.</li>
+                            <li><strong>Performance Optimization &amp; SEO:</strong> Improved page load speed through
+                                server-side caching, asset minification, image compression, and on-page SEO best
+                                practices.</li>
+                            <li><strong>Collaborative Deployment:</strong> Partnered with design teams and stakeholders
+                                to bring concepts from layout layouts to live deployment.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience Item 4 -->
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-header-block">
+                        <span class="timeline-date">Apr 2022 – Aug 2022</span>
+                        <h3 class="timeline-role">Web Development Intern</h3>
+                        <h4 class="timeline-company">Estate Solution</h4>
+                        <span class="timeline-location"><i data-lucide="map-pin"></i> Islamabad</span>
+                    </div>
+                    <div class="timeline-body">
+                        <p class="timeline-summary">Gained fundamental experience in frontend systems and responsive web
+                            layout:</p>
+                        <ul class="timeline-bullets">
+                            <li>Supported development of responsive web layouts using clean HTML, CSS, and basic
+                                JavaScript.</li>
+                            <li>Assisted in integrating REST API endpoints, version control via Git, and cross-browser
+                                functionality testing.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Grid Section -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-tagline">My Creations</span>
+                <h2 class="section-title">Projects Showcase</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <!-- Filter Controls -->
+            <div class="projects-filter scroll-reveal">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="isp-telecom">ISP &amp; Telecom</button>
+                <button class="filter-btn" data-filter="full-stack">Full Stack PHP/Laravel</button>
+                <button class="filter-btn" data-filter="wordpress">WordPress &amp; CMS</button>
+                <button class="filter-btn" data-filter="other">Other Apps</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card scroll-reveal" data-category="isp-telecom full-stack">
+                    <div class="project-card-header">
+                        <span class="project-status">In Development</span>
+                        <i data-lucide="server" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">Multi-Tenant ISP Billing &amp; Mgmt Platform</h3>
+                    <p class="project-desc">
+                        A robust, enterprise-grade ISP operations system built on Laravel. Features multi-tenant
+                        isolation, granular RBAC (Super-admin to Support Agent), and multi-NAS/multi-RADIUS coordination
+                        for subscriber lifecycle automation.
+                    </p>
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>RADIUS</span>
+                        <span>MikroTik API</span>
+                    </div>
+                    <div class="project-links">
+                        <span class="project-link-disabled"><i data-lucide="globe"></i> Demo Coming Soon</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card scroll-reveal" data-category="full-stack">
+                    <div class="project-card-header">
+                        <span class="project-status live">Production</span>
+                        <i data-lucide="shield-alert" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">ISP CMS Pro — Complaint System</h3>
+                    <p class="project-desc">
+                        A production-deployed complaints management application for Opal Telecom. Facilitates complex
+                        ticket creation, automated staff assignment, status escalations, and audit logs.
+                    </p>
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JS</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ocms.opaltel.com" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="external-link"></i> Live Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WordPress Project 1 -->
+                <div class="project-card scroll-reveal" data-category="wordpress">
+                    <div class="project-card-header">
+                        <span class="project-status live">Live Site</span>
+                        <i data-lucide="layout" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">Thrive Consulting Global</h3>
+                    <p class="project-desc">
+                        A professional corporate web platform tailored for Thrive Consulting. Designed with clean
+                        business layouts, high-performance page scores, customized brand guidelines, and optimized
+                        lead-capture contact flows.
+                    </p>
+                    <div class="project-tags">
+                        <span>WordPress</span>
+                        <span>Corporate CMS</span>
+                        <span>SEO</span>
+                        <span>UI Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="http://thriveconsulting.global/" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="external-link"></i> Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WordPress Project 2 -->
+                <div class="project-card scroll-reveal" data-category="wordpress">
+                    <div class="project-card-header">
+                        <span class="project-status live">Live Site</span>
+                        <i data-lucide="shopping-bag" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">Little Pearls of Wisdom</h3>
+                    <p class="project-desc">
+                        An elegant lifestyle blogging and customized e-commerce boutique platform based in the United
+                        Kingdom. Implements customizable widgets, optimized store indices, and specialized caching
+                        configurations.
+                    </p>
+                    <div class="project-tags">
+                        <span>WooCommerce</span>
+                        <span>WordPress</span>
+                        <span>E-commerce</span>
+                        <span>CSS Styling</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://littlepearlsofwisdom.co.uk/" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="external-link"></i> Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WordPress Project 3 -->
+                <div class="project-card scroll-reveal" data-category="wordpress">
+                    <div class="project-card-header">
+                        <span class="project-status live">Live Site</span>
+                        <i data-lucide="calendar" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">Coaching with Uzma</h3>
+                    <p class="project-desc">
+                        A highly interactive coaching portfolio and personal brand website. Integrated with dynamic
+                        calendar appointment systems, custom subscription modules, and smooth scroll testimonial
+                        carousels.
+                    </p>
+                    <div class="project-tags">
+                        <span>WordPress</span>
+                        <span>Appointment Scheduling</span>
+                        <span>Form Integrations</span>
+                        <span>Responsive</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://coachingwithuzma.com/" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="external-link"></i> Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WordPress Project 4 -->
+                <div class="project-card scroll-reveal" data-category="wordpress">
+                    <div class="project-card-header">
+                        <span class="project-status live">Live Site</span>
+                        <i data-lucide="shield" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">RM Security Solution</h3>
+                    <p class="project-desc">
+                        A comprehensive industrial and corporate security product showcase website. Displays product
+                        catalog indices, structured technical specifications datasheets, and quote request workflows.
+                    </p>
+                    <div class="project-tags">
+                        <span>WordPress</span>
+                        <span>Product Showcase</span>
+                        <span>Custom Fields</span>
+                        <span>SEO Optimization</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://rmsecuirtysolution.com/" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="external-link"></i> Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- WordPress Project 5 (Dual WordPress & ISP/Telecom) -->
+                <div class="project-card scroll-reveal" data-category="wordpress isp-telecom">
+                    <div class="project-card-header">
+                        <span class="project-status live">Live Site</span>
+                        <i data-lucide="wifi" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">Radspot</h3>
+                    <p class="project-desc">
+                        Official ISP marketing portal and client resource hub for Radspot. Custom features include
+                        pricing tiers matrices, network coverage layouts, and quick redirect points for subscriber login
+                        pages.
+                    </p>
+                    <div class="project-tags">
+                        <span>WordPress</span>
+                        <span>ISP Portal</span>
+                        <span>Pricing Matrix</span>
+                        <span>Link Integrations</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="http://radspot.net/" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="external-link"></i> Visit Site
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card scroll-reveal" data-category="isp-telecom">
+                    <div class="project-card-header">
+                        <span class="project-status git">GitHub</span>
+                        <i data-lucide="github" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">RADIUS Management Interface</h3>
+                    <p class="project-desc">
+                        Custom PHP MVC interface designed for managing FreeRADIUS databases. Empowers non-technical
+                        admins to provision users, control session timeouts, configure VSAs, and register devices.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP MVC</span>
+                        <span>MySQL</span>
+                        <span>FreeRADIUS</span>
+                        <span>AAA</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Talha551/RADIUS-SOLUTION-" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="github"></i> View Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card scroll-reveal" data-category="isp-telecom">
+                    <div class="project-card-header">
+                        <span class="project-status git">GitHub</span>
+                        <i data-lucide="settings" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">MikroTik Hotspot Manager</h3>
+                    <p class="project-desc">
+                        A lightweight web interface integrating MikroTik's RouterOS API. Enables network managers to
+                        dynamically provision temporary hotspot users, check traffic statistics, and push speed
+                        profiles.
+                    </p>
+                    <div class="project-tags">
+                        <span>PHP</span>
+                        <span>MikroTik API</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Talha551/MIKROTIK-HOTSPOT-SOLUTION" target="_blank"
+                            rel="noopener noreferrer" class="project-link-btn">
+                            <i data-lucide="github"></i> View Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card scroll-reveal" data-category="isp-telecom full-stack">
+                    <div class="project-card-header">
+                        <span class="project-status git">GitHub</span>
+                        <i data-lucide="credit-card" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">ISP Billing System</h3>
+                    <p class="project-desc">
+                        A full-stack subscriber billing application designed with Laravel Blade. Includes invoicing
+                        workflows, receipt logging, payment tracking ledger, and auto-suspension triggers.
+                    </p>
+                    <div class="project-tags">
+                        <span>Laravel</span>
+                        <span>Blade</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Talha551/ISP-BILLING" target="_blank" rel="noopener noreferrer"
+                            class="project-link-btn">
+                            <i data-lucide="github"></i> View Repo
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card scroll-reveal" data-category="other">
+                    <div class="project-card-header">
+                        <span class="project-status git">GitHub</span>
+                        <i data-lucide="cloud" class="project-type-icon"></i>
+                    </div>
+                    <h3 class="project-title">Cloud Services Platform</h3>
+                    <p class="project-desc">
+                        An MVC-based backend service manager constructed with CodeIgniter 3. Features customer
+                        subscription management, license provisioning logs, and simple payment summaries.
+                    </p>
+                    <div class="project-tags">
+                        <span>CodeIgniter 3</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Talha551/Cloud-Services-php" target="_blank"
+                            rel="noopener noreferrer" class="project-link-btn">
+                            <i data-lucide="github"></i> View Repo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-tagline">My Stack</span>
+                <h2 class="section-title">Technical Skills Matrix</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="skills-grid-container">
+                <!-- Skill Category 1 -->
+                <div class="skills-category scroll-reveal">
+                    <h3 class="skills-category-title">
+                        <i data-lucide="network"></i> ISP &amp; Telecom Systems
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill"><span>FreeRADIUS / AAA</span></div>
+                        <div class="skill-pill"><span>MikroTik RouterOS API</span></div>
+                        <div class="skill-pill"><span>BNG Portal Development</span></div>
+                        <div class="skill-pill"><span>PPPoE / DHCP Provisioning</span></div>
+                        <div class="skill-pill"><span>Subscriber Lifecycle Automation</span></div>
+                        <div class="skill-pill"><span>RADIUS VSA Configuration</span></div>
+                        <div class="skill-pill"><span>NAS Integration &amp; Accounting</span></div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2 -->
+                <div class="skills-category scroll-reveal">
+                    <h3 class="skills-category-title">
+                        <i data-lucide="laptop"></i> Web Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill"><span>PHP (7.x / 8.x)</span></div>
+                        <div class="skill-pill"><span>Laravel Framework</span></div>
+                        <div class="skill-pill"><span>CodeIgniter 3</span></div>
+                        <div class="skill-pill"><span>React.js</span></div>
+                        <div class="skill-pill"><span>Node.js / Express</span></div>
+                        <div class="skill-pill"><span>JavaScript (ES6+)</span></div>
+                        <div class="skill-pill"><span>HTML5 / CSS3 / SASS</span></div>
+                        <div class="skill-pill"><span>WordPress &amp; WooCommerce</span></div>
+                        <div class="skill-pill"><span>REST API Development</span></div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3 -->
+                <div class="skills-category scroll-reveal">
+                    <h3 class="skills-category-title">
+                        <i data-lucide="database"></i> Databases &amp; Operations
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill"><span>MySQL / MariaDB</span></div>
+                        <div class="skill-pill"><span>MongoDB</span></div>
+                        <div class="skill-pill"><span>Database Optimization</span></div>
+                        <div class="skill-pill"><span>Git &amp; GitHub</span></div>
+                        <div class="skill-pill"><span>OWASP Security Practices</span></div>
+                        <div class="skill-pill"><span>SEO / Core Web Vitals</span></div>
+                        <div class="skill-pill"><span>Agile / Scrum Delivery</span></div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4 -->
+                <div class="skills-category scroll-reveal">
+                    <h3 class="skills-category-title">
+                        <i data-lucide="check-square"></i> Quality Assurance (QA)
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-pill"><span>Manual Testing</span></div>
+                        <div class="skill-pill"><span>Functional Testing</span></div>
+                        <div class="skill-pill"><span>Regression Cycles</span></div>
+                        <div class="skill-pill"><span>Bug &amp; Defect Tracking</span></div>
+                        <div class="skill-pill"><span>Test Case Design</span></div>
+                        <div class="skill-pill"><span>Traceability Matrices</span></div>
+                        <div class="skill-pill"><span>QA Release Reports</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Certifications Section -->
+        <section id="education" class="education-section section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-tagline">Academic &amp; Training</span>
+                <h2 class="section-title">Education &amp; Credentials</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="edu-certs-grid">
+                <!-- Education Card -->
+                <div class="edu-card scroll-reveal">
+                    <div class="edu-icon-wrapper">
+                        <i data-lucide="graduation-cap"></i>
+                    </div>
+                    <span class="edu-duration">2019 – 2024</span>
+                    <h3 class="edu-title">BSc in Computer Science</h3>
+                    <h4 class="edu-institute">PMAS Arid Agriculture University, Rawalpindi</h4>
+                    <p class="edu-details">
+                        CGPA: 2.68 / 4.0. Coursework: Data Structures &amp; Algorithms, Database Systems, Computer
+                        Networks, Software Engineering.
+                    </p>
+                </div>
+
+                <!-- Certifications Wrapper -->
+                <div class="certs-list-container scroll-reveal">
+                    <h3 class="certs-group-title"><i data-lucide="award"></i> Professional Certifications</h3>
+                    <div class="certs-grid">
+                        <div class="cert-item">
+                            <i data-lucide="check-circle" class="cert-check"></i>
+                            <div>
+                                <h4 class="cert-name">Professional Diploma in Software Testing &amp; QA</h4>
+                                <span class="cert-issuer">Udemy — Apr 2025</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="check-circle" class="cert-check"></i>
+                            <div>
+                                <h4 class="cert-name">Agile Project Management</h4>
+                                <span class="cert-issuer">HP LIFE — Nov 2025</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="check-circle" class="cert-check"></i>
+                            <div>
+                                <h4 class="cert-name">Data Science and Analytics</h4>
+                                <span class="cert-issuer">HP LIFE — Apr 2025</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i data-lucide="check-circle" class="cert-check"></i>
+                            <div>
+                                <h4 class="cert-name">AI for Beginners</h4>
+                                <span class="cert-issuer">HP LIFE — Apr 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="section-header scroll-reveal">
+                <span class="section-tagline">Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-underline"></div>
+            </div>
+
+            <div class="contact-container">
+                <!-- Info cards -->
+                <div class="contact-info scroll-reveal">
+                    <h3 class="contact-info-title">Let's build something epic together.</h3>
+                    <p class="contact-info-text">
+                        I am open to discussions regarding new opportunities, full-time engineering roles, freelance
+                        contracts, or technical collaborations in ISP automation and web apps.
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i data-lucide="mail"></i></div>
+                            <div>
+                                <span class="detail-label">Send Email</span>
+                                <a href="mailto:talhaausaf000@gmail.com"
+                                    class="detail-value">talhaausaf000@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i data-lucide="phone"></i></div>
+                            <div>
+                                <span class="detail-label">Call / WhatsApp</span>
+                                <a href="tel:+923359721672" class="detail-value">+92 335 9721672</a>
+                            </div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                            <div>
+                                <span class="detail-label">Location</span>
+                                <span class="detail-value">Islamabad, Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact form (Client-side handled, statically compatible) -->
+                <form id="contact-form" class="contact-form-element scroll-reveal"
+                    action="https://formspree.io/f/placeholder" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-name">Your Name</label>
+                            <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Your Email</label>
+                            <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-subject">Subject</label>
+                        <input type="text" id="form-subject" name="_subject"
+                            placeholder="ISP Billing Integration Project" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" name="message" rows="5"
+                            placeholder="Tell me about your project requirements..." required></textarea>
+                    </div>
+                    <!-- Hidden field to prevent spam bots -->
+                    <input type="text" name="_gotcha" style="display:none">
+
+                    <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                        <span>Send Message</span>
+                        <i data-lucide="send" class="btn-icon"></i>
+                    </button>
+
+                    <div class="form-message-status" id="form-status"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-copy">
+                &copy; 2026 Muhammad Talha Ausaf. All rights reserved.
+            </p>
+            <div class="footer-socials">
+                <a href="https://github.com/Talha551" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                        data-lucide="github"></i></a>
+                <a href="https://linkedin.com/in/talha-ausaf" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+                <a href="mailto:talhaausaf000@gmail.com" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script File -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
